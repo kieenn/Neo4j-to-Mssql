@@ -1,0 +1,69 @@
+.neo4j{
+    display: inline-block;
+    margin-right: 200px;
+    vertical-align: top;
+
+}
+.mssql{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.neo4j_uri{
+    display: block;
+    margin-bottom: 5px;
+    width: 358px;
+    height: 30px;
+
+}
+.neo4j_user{
+    height: 30px;
+    width: 173px;
+}
+.neo4j_password{
+    width: 173px;
+    height: 30px;
+}
+.mssql_server{
+    width: 173px;
+    height: 30px;
+}
+.mssql_database{
+    width: 173px;
+    height: 30px;
+}
+.mssql_username{
+    width: 173px;
+    height: 30px;
+}
+.mssql_password{
+    width: 173px;
+    height: 30px;
+}
+.container-1{
+    margin-bottom: 5px;
+}
+.container{
+    text-align: center;
+}
+input {
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+.connect{
+    width: 10%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.connect:hover{
+    background-color: cornflowerblue;
+}
+.connect:active{
+    opacity: 0.7;
+}

@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neo4j to mssql</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<form class = "container"  method = "post">
+    <h1>Neo4j to Mssql</h1>
+    <div class="neo4j">
+        <h2>Neo4j information</h2>
+        <input class="neo4j_uri" name ="neo4j_uri" type="text" placeholder=uri>
+        <input class="neo4j_user" name = "neo4j_user" type="text" placeholder="user">
+            <input class="neo4j_password" name= "neo4j_password" type="text" placeholder="password">
+    </div>
+    <div class="mssql" >
+        <h2>Mssql information</h2>
+        <div class="container-1">
+            <input class="mssql_server" name="mssql_server" type="text" placeholder=server>
+            <input class="mssql_database" name="mssql_database" type="text" placeholder="database">
+        </div>
+        <div>
+            <input class="mssql_username" name="mssql_username" type="text" placeholder="username">
+            <input class="mssql_password" name="mssql_password" type="text" placeholder="password">
+        </div>
+
+    </div>
+    <div>
+        <button class="connect" type="submit">Connect</button>
+    </div>
+</form>
+<ul>
+    {% for menu in menus %}
+    <li>{{menu}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
+
